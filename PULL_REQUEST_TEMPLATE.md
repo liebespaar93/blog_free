@@ -3,7 +3,7 @@ name: "🏗️ 환결설정 계획"
 about: 환경설정 계획 작성
 title: "🏗️ [Setting] 환경설정 계획"
 labels: "🏗️ 환경설정"
-assignees: ''
+assignees: 'liebespaar93'
 
 ---
 <!-- Pull Request Template -->
