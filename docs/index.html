@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="반응형 웹 페이지 제작 샘플입니다.">
+	<meta name="keyword" content="반응형 사이트, 교육사이트">
+	<meta name="robots" content="all">
+
+	<title>Kyoulee Blog</title>
+
+	<!-- favicon & icon -->
+	<link rel="shortcut icon" href="img/icon/044-buffer.ico">
+	<link rel="buffer-icon" href="img/icon/044-buffer.ico">
+
+	<!-- style css -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/flickity.css">
+
+	<!-- font-awsome -->
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+	<!-- html5 Support & ie Version Checker -->
+	<!-- <script src="bower_components/html5shiv/dist/html5shiv.js"></script> -->
+
+	<!-- jQuery -->
+	<!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+	<!-- Markdown -->
+	<script src="./js/remarkable.js"></script>
+
+	<!-- include -->
+	<script src="./js/include.js"></script>
+	<script src="./js/header/header.js"></script>
+	<script src="./js/main/contents.js"></script>
+	<script src="./js/tools/event-ctr.js"></script>
+	<script src="./js/tools/wave.js"></script>
+	<script src="./js/tools/markdown.js"></script>
+	<script src="./js/tools/darkmode.js"></script>
+	<script src="./js/highlight/highlight.js"></script>
+</head>
+
+<body>
+	<header>
+		<include include-html="./pages/header/nav.html"></include>
+		<include include-html="./pages/header/sidebar.html"></include>
+	</header>
+	<div id="main">
+		<include include-html="./pages/main/darkmode.html"></include>
+		<include include-html="./pages/main/main.html"></include>
+	</div>
+	
+	<script>
+		include();
+	</script>
+</body>
+</html>

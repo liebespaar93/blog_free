@@ -1,0 +1,158 @@
+:root{
+    /* codeblock */
+    --markdown-codeblock-language-shadow : #000;
+    --markdown-codeblock-color: #f5f5f5;
+    --markdown-codeblock-backgroundcolor: #282828;
+        /** dark **/
+        --markdown-codeblock-color-dark: #f3f3f3;
+        --markdown-codeblock-backgroundcolor-dark: #000000;
+        /** light **/
+        --markdown-codeblock-color-light: #fff;
+        --markdown-codeblock-backgroundcolor-light: #3a3a3a;
+
+    --markdown-line-color: #fadc44;
+    --markdown-font-size-std: 8px;
+    --markdown-tab-space: 8px;
+}
+
+
+/* h1 ~ h4 */
+markdown h1 {
+    font-size: calc(var(--markdown-font-size-std) * 4);
+    font-weight: 800;
+}
+
+markdown h1::before {
+    content: "";
+    font-size: calc(var(--markdown-font-size-std) * 3);
+    border: 3px solid var(--markdown-line-color);
+    margin-left: calc(var(--markdown-tab-space) * 0);
+    margin-right: calc(var(--markdown-tab-space) * 2);
+}
+
+
+markdown h2 {
+    font-size: calc(var(--markdown-font-size-std) * 3);
+    font-weight: 600;
+}
+
+markdown h2::before {
+    content: "";
+    font-size: calc(var(--markdown-font-size-std) * 2);
+    border: 2px solid var(--markdown-line-color);
+    margin-left: calc(var(--markdown-tab-space) * 2);
+    margin-right: calc(var(--markdown-tab-space) * 1);
+}
+
+markdown h3 {
+    font-size: calc(var(--markdown-font-size-std) * 2);
+    font-weight: 400;
+}
+markdown h3::before {
+    content: "";
+    font-size: calc(var(--markdown-font-size-std) * 2);
+    border: 2px solid var(--markdown-line-color);
+    margin-left: calc(var(--markdown-tab-space) * 4);
+    margin-right: calc(var(--markdown-tab-space) * 0.5);
+}
+
+
+markdown h4 {
+    font-size: calc(var(--markdown-font-size-std) * 1);
+}
+
+/* h1 ~ h4 end */
+
+
+
+
+
+
+/* code block */
+markdown pre {
+    position: relative;
+    color: var(--markdown-codeblock-color);
+    background-color: var(--markdown-codeblock-backgroundcolor);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+markdown pre code {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow-x:scroll;
+}
+
+
+
+markdown pre code[class="language-bash"]::before {
+    content: "bash";
+    color: #fff;
+    text-shadow: 0px 0px 2px var(--markdown-codeblock-language-shadow),0px 0px 2px var(--markdown-codeblock-language-shadow);
+    position: relative;
+    display: block;
+    background-color: #444444;
+    width: 100px;
+    text-align: center;
+    border-radius: 0% 0% 120px 0%;
+}
+markdown pre code[class="language-html"]::before {
+    content: "html";
+    color: #fff;
+    text-shadow: 0px 0px 2px var(--markdown-codeblock-language-shadow),0px 0px 2px var(--markdown-codeblock-language-shadow);
+    position: relative;
+    display: block;
+    background-color: #ff3700;
+    width: 100px;
+    text-align: center;
+    border-radius: 0% 0% 120px 0%;
+}
+
+
+markdown pre code[class="language-css"]::before {
+    content: "css";
+    color: #fff;
+    text-shadow: 0px 0px 2px var(--markdown-codeblock-language-shadow),0px 0px 2px var(--markdown-codeblock-language-shadow);
+    position: relative;
+    display: block;
+    background-color: #0015ff;
+    width: 100px;
+    text-align: center;
+    border-radius: 0% 0% 120px 0%;
+}
+
+
+markdown pre code[class="language-js"]::before {
+    content: "js";
+    color: #fff;
+    text-shadow: 0px 0px 2px var(--markdown-codeblock-language-shadow),0px 0px 2px var(--markdown-codeblock-language-shadow);
+    position: relative;
+    display: block;
+    background-color: #ffea00;
+    width: 100px;
+    text-align: center;
+    border-radius: 0% 0% 120px 0%;
+}
+
+
+markdown pre code[class="language-yml"]::before {
+    content: "yaml";
+    color: #fff;
+    text-shadow: 0px 0px 2px var(--markdown-codeblock-language-shadow),0px 0px 2px var(--markdown-codeblock-language-shadow);
+    position: relative;
+    display: block;
+    background-color: #ff51df;
+    width: 100px;
+    text-align: center;
+    border-radius: 0% 0% 120px 0%;
+}
+
+/* markdown pre code[title]::before {
+    content: $content += "aa";
+    background-color: #444444;
+} */
+
+/* code block */
